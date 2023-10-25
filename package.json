@@ -1,0 +1,11 @@
+{
+  "name": "react-practise",
+  "version": "1.0.0",
+  "description": "This is just practising react",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Rahul Anand",
+  "license": "ISC"
+}
