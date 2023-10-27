@@ -1,0 +1,30 @@
+{
+  "name": "learnmodules",
+  "version": "1.0.0",
+  "description": "Learn About Npm Packages",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rahul00154/React_Js.git"
+  },
+  "author": "Rahul Anand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rahul00154/React_Js/issues"
+  },
+  "homepage": "https://github.com/Rahul00154/React_Js#readme",
+  "devDependencies": {
+    "parcel": "^2.10.1",
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}

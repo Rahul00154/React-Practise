@@ -1,0 +1,3 @@
+Package-lock.json:- it means to always puch on github 
+
+it maintains the exact version of parcel
