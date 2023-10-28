@@ -2967,7 +2967,7 @@ const Todo = ()=>{
                 ]
             }, void 0, true, {
                 fileName: "App.js",
-                lineNumber: 16,
+                lineNumber: 22,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -2976,7 +2976,7 @@ const Todo = ()=>{
                 alt: "Gregorio Y. Zara"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 17,
+                lineNumber: 23,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -2985,33 +2985,33 @@ const Todo = ()=>{
                         children: "Improve The videoPhone"
                     }, void 0, false, {
                         fileName: "App.js",
-                        lineNumber: 23,
+                        lineNumber: 29,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: "Prepare React Notes"
                     }, void 0, false, {
                         fileName: "App.js",
-                        lineNumber: 24,
+                        lineNumber: 30,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: "Work On fuelled engine"
                     }, void 0, false, {
                         fileName: "App.js",
-                        lineNumber: 25,
+                        lineNumber: 31,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "App.js",
-                lineNumber: 22,
+                lineNumber: 28,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 15,
+        lineNumber: 21,
         columnNumber: 5
     }, undefined);
 };
@@ -3023,7 +3023,7 @@ const TodoList = ()=>{
                 children: "Hedy's Lamar Todo's"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 34,
+                lineNumber: 40,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -3032,7 +3032,7 @@ const TodoList = ()=>{
                 className: "photo"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 35,
+                lineNumber: 41,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -3041,27 +3041,27 @@ const TodoList = ()=>{
                         children: "Invent New Traffic Lights"
                     }, void 0, false, {
                         fileName: "App.js",
-                        lineNumber: 41,
+                        lineNumber: 47,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: "Rehearse Movie Scene"
                     }, void 0, false, {
                         fileName: "App.js",
-                        lineNumber: 42,
+                        lineNumber: 48,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: "Improve Spectrum Technology"
                     }, void 0, false, {
                         fileName: "App.js",
-                        lineNumber: 43,
+                        lineNumber: 49,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "App.js",
-                lineNumber: 40,
+                lineNumber: 46,
                 columnNumber: 7
             }, undefined)
         ]
@@ -3074,7 +3074,7 @@ const Profile = ()=>{
         alt: "Katherine Johnson"
     }, void 0, false, {
         fileName: "App.js",
-        lineNumber: 50,
+        lineNumber: 56,
         columnNumber: 10
     }, undefined);
 };
@@ -3086,23 +3086,23 @@ function Galllery() {
                 children: "Amazing Scientist"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 56,
+                lineNumber: 62,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Profile, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 57,
+                lineNumber: 63,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Profile, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 58,
+                lineNumber: 64,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 55,
+        lineNumber: 61,
         columnNumber: 5
     }, this);
 }
@@ -3114,23 +3114,28 @@ function App() {
                 children: "Hello"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 66,
+                lineNumber: 72,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _components.HandleProps), {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 67,
+                lineNumber: 73,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _components.PackingList), {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 68,
+                lineNumber: 74,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _components.TeaaGathering), {}, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 76,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 65,
+        lineNumber: 71,
         columnNumber: 5
     }, this);
 }
@@ -3138,7 +3143,7 @@ _c4 = App;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 75,
+    lineNumber: 83,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3, _c4;
@@ -27345,10 +27350,13 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "HandleProps", ()=>(0, _handlePropsJs.HandleProps));
 parcelHelpers.export(exports, "PackingList", ()=>(0, _conditionalRenderJs.PackingList));
+parcelHelpers.export(exports, "RecipeList", ()=>(0, _pureComponentJs.RecipeList));
+parcelHelpers.export(exports, "TeaaGathering", ()=>(0, _pureComponentJs.TeaaGathering));
 var _handlePropsJs = require("./HandleProps.js");
 var _conditionalRenderJs = require("./ConditionalRender.js");
+var _pureComponentJs = require("./PureComponent.js");
 
-},{"./HandleProps.js":"coWOY","./ConditionalRender.js":"23vBE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"coWOY":[function(require,module,exports) {
+},{"./HandleProps.js":"coWOY","./ConditionalRender.js":"23vBE","./PureComponent.js":"gOOkH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"coWOY":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$e025 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27712,6 +27720,77 @@ $RefreshReg$(_c, "Item");
 $RefreshReg$(_c1, "PackingList");
 
   $parcel$ReactRefreshHelpers$cd19.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gOOkH":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$bb36 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$bb36.prelude(module);
+
+try {
+//It stops to rerendering of the component
+//same INPUT SAME OUTPUT
+//React let every component we write is pure function
+//it means that react components you write must always return the same JSX given the same inputs
+// const Recipe = ({ drinkers }) => {
+//   return (
+//     <ol>
+//       <li>Boil {drinkers} cups of water.</li>
+//       <li>
+//         Add {drinkers} spoons of tea and {0.5 * drinkers} spoons of spice.
+//       </li>
+//       <li>Add {0.5 * drinkers} cups of milk to boil and sugar to tast</li>
+//     </ol>
+//   );
+// };
+// export const RecipeList = () => {
+//   return (
+//     <section>
+//       <h1>Spiced Chai Recipe</h1>
+//       <h2>For two</h2>
+//       <Recipe drinkers={2} />
+//       <h2>For a gathering</h2>
+//       <Recipe drinkers={4} />
+//     </section>
+//   );
+// };
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "TeaaGathering", ()=>TeaaGathering);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Cup = ({ guest })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+        children: [
+            "Tea cup for guest #",
+            guest
+        ]
+    }, void 0, true, {
+        fileName: "components/PureComponent.js",
+        lineNumber: 32,
+        columnNumber: 10
+    }, undefined);
+};
+_c = Cup;
+const TeaaGathering = ()=>{
+    let cups = [];
+    for(let i = 1; i <= 10; i++)cups.push(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cup, {
+        guest: i
+    }, i, false, {
+        fileName: "components/PureComponent.js",
+        lineNumber: 38,
+        columnNumber: 15
+    }, undefined));
+    return cups;
+};
+_c1 = TeaaGathering;
+var _c, _c1;
+$RefreshReg$(_c, "Cup");
+$RefreshReg$(_c1, "TeaaGathering");
+
+  $parcel$ReactRefreshHelpers$bb36.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;

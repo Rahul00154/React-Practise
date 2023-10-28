@@ -27184,54 +27184,33 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>List);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
 var _data = require("./data");
 var _utils = require("./utils");
 function List() {
-    const chemist = (0, _data.people).filter((person)=>person.profession === "chemist");
-    const listItems = chemist.map((person)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+    // const chemist = people.filter((person) => person.profession === "chemist");
+    const listItems = (0, _data.people).map((person)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Fragment), {
             children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    src: (0, _utils.getImageUrl)(person),
-                    alt: person.name
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: person.name
                 }, void 0, false, {
                     fileName: "components/List.js",
-                    lineNumber: 16,
-                    columnNumber: 7
+                    lineNumber: 25,
+                    columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
-                            children: [
-                                person.name,
-                                ":"
-                            ]
-                        }, void 0, true, {
-                            fileName: "components/List.js",
-                            lineNumber: 18,
-                            columnNumber: 9
-                        }, this),
-                        " " + person.profession + " ",
-                        "known for ",
-                        person.accomplishment
-                    ]
-                }, void 0, true, {
+                    children: person.bio
+                }, void 0, false, {
                     fileName: "components/List.js",
-                    lineNumber: 17,
-                    columnNumber: 7
+                    lineNumber: 26,
+                    columnNumber: 9
                 }, this)
             ]
-        }, void 0, true, {
+        }, person.id, true, {
             fileName: "components/List.js",
-            lineNumber: 15,
-            columnNumber: 5
-        }, this));
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-        children: listItems
-    }, void 0, false, {
-        fileName: "components/List.js",
-        lineNumber: 24,
-        columnNumber: 10
-    }, this);
+            lineNumber: 24,
+            columnNumber: 7
+        }, this)); // return <ul>{listItems}</ul>;
 }
 _c = List;
 var _c;
@@ -27242,7 +27221,49 @@ $RefreshReg$(_c, "List");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./data":"9ya4l","./utils":"4lEfY"}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./data":"9ya4l","./utils":"4lEfY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9ya4l":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "people", ()=>people);
+const people = [
+    {
+        id: 0,
+        name: "Creola Katherine Johnson",
+        profession: "mathematician",
+        accomplishment: "spaceflight calculations",
+        imageId: "MK3eW3A"
+    },
+    {
+        id: 1,
+        name: "Mario Jos\xe9 Molina-Pasquel Henr\xedquez",
+        profession: "chemist",
+        accomplishment: "discovery of Arctic ozone hole",
+        imageId: "mynHUSa"
+    },
+    {
+        id: 2,
+        name: "Mohammad Abdus Salam",
+        profession: "physicist",
+        accomplishment: "electromagnetism theory",
+        imageId: "bE7W1ji"
+    },
+    {
+        id: 3,
+        name: "Percy Lavon Julian",
+        profession: "chemist",
+        accomplishment: "pioneering cortisone drugs, steroids and birth control pills",
+        imageId: "IOjWm71"
+    },
+    {
+        id: 4,
+        name: "Subrahmanyan Chandrasekhar",
+        profession: "astrophysicist",
+        accomplishment: "white dwarf star mass calculations",
+        imageId: "lrWQx8l"
+    }
+];
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27272,7 +27293,15 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"km3Ru":[function(require,module,exports) {
+},{}],"4lEfY":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getImageUrl", ()=>getImageUrl);
+function getImageUrl(person) {
+    return "https://i.imgur.com/" + person.imageId + "s.jpg";
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"km3Ru":[function(require,module,exports) {
 "use strict";
 var Refresh = require("7422ead32dcc1e6b");
 function debounce(func, delay) {
@@ -27410,56 +27439,6 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"9ya4l":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "people", ()=>people);
-const people = [
-    {
-        id: 0,
-        name: "Creola Katherine Johnson",
-        profession: "mathematician",
-        accomplishment: "spaceflight calculations",
-        imageId: "MK3eW3A"
-    },
-    {
-        id: 1,
-        name: "Mario Jos\xe9 Molina-Pasquel Henr\xedquez",
-        profession: "chemist",
-        accomplishment: "discovery of Arctic ozone hole",
-        imageId: "mynHUSa"
-    },
-    {
-        id: 2,
-        name: "Mohammad Abdus Salam",
-        profession: "physicist",
-        accomplishment: "electromagnetism theory",
-        imageId: "bE7W1ji"
-    },
-    {
-        id: 3,
-        name: "Percy Lavon Julian",
-        profession: "chemist",
-        accomplishment: "pioneering cortisone drugs, steroids and birth control pills",
-        imageId: "IOjWm71"
-    },
-    {
-        id: 4,
-        name: "Subrahmanyan Chandrasekhar",
-        profession: "astrophysicist",
-        accomplishment: "white dwarf star mass calculations",
-        imageId: "lrWQx8l"
-    }
-];
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4lEfY":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "getImageUrl", ()=>getImageUrl);
-function getImageUrl(person) {
-    return "https://i.imgur.com/" + person.imageId + "s.jpg";
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["j2WyO","1xC6H","2Ew96"], "2Ew96", "parcelRequire2642")
+},{"7422ead32dcc1e6b":"786KC"}]},["j2WyO","1xC6H","2Ew96"], "2Ew96", "parcelRequire2642")
 
 //# sourceMappingURL=index.7826abd7.js.map

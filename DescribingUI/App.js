@@ -1,7 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import { HandleProps, PackingList } from "./components";
+import {
+  HandleProps,
+  PackingList,
+  RecipeList,
+  TeaaGathering,
+} from "./components";
+
 const person = {
   name: "Rahul Anand",
   theme: {
@@ -66,6 +72,8 @@ function App() {
       <h1>Hello</h1>
       <HandleProps />
       <PackingList />
+      {/* <RecipeList /> */}
+      <TeaaGathering />
     </div>
   );
 }

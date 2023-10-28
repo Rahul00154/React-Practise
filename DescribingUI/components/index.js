@@ -1,3 +1,4 @@
 import { HandleProps } from "./HandleProps.js";
 import { PackingList } from "./ConditionalRender.js";
-export { HandleProps, PackingList };
+import { RecipeList, TeaaGathering } from "./PureComponent.js";
+export { HandleProps, PackingList, RecipeList, TeaaGathering };
