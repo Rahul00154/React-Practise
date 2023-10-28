@@ -2948,7 +2948,7 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-var _handleProps = require("./components/HandleProps");
+var _components = require("./components");
 const person = {
     name: "Rahul Anand",
     theme: {
@@ -3117,9 +3117,14 @@ function App() {
                 lineNumber: 66,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _handleProps.HandleProps), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _components.HandleProps), {}, void 0, false, {
                 fileName: "App.js",
                 lineNumber: 67,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _components.PackingList), {}, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 68,
                 columnNumber: 7
             }, this)
         ]
@@ -3133,7 +3138,7 @@ _c4 = App;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 74,
+    lineNumber: 75,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3, _c4;
@@ -3148,7 +3153,7 @@ $RefreshReg$(_c4, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/HandleProps":"coWOY"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components":"ePLYF","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27335,7 +27340,112 @@ module.exports = require("ef03b89c8fe2794e");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"gkKU3":[function(require,module,exports) {
+},{}],"ePLYF":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "HandleProps", ()=>(0, _handlePropsJs.HandleProps));
+parcelHelpers.export(exports, "PackingList", ()=>(0, _conditionalRenderJs.PackingList));
+var _handlePropsJs = require("./HandleProps.js");
+var _conditionalRenderJs = require("./ConditionalRender.js");
+
+},{"./HandleProps.js":"coWOY","./ConditionalRender.js":"23vBE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"coWOY":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$e025 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$e025.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "HandleProps", ()=>HandleProps);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _utils = require("./utils");
+//props are used to pass data from parent component to child component , It is like we passing params in function in js just like that we can pass params in react component that is knows as props.
+//React component accepts a single arguement, a props object
+const Avatar = ({ person, size })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+        className: "avatar",
+        src: (0, _utils.getImageUrl)(person),
+        alt: person.name,
+        width: size,
+        height: size
+    }, void 0, false, {
+        fileName: "components/HandleProps.js",
+        lineNumber: 9,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Avatar;
+const HandleProps = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "Handle Props"
+            }, void 0, false, {
+                fileName: "components/HandleProps.js",
+                lineNumber: 22,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Avatar, {
+                size: 100,
+                person: {
+                    name: "Rahul Anand",
+                    imageId: "YfeOqp2" /* Here We passing props to our children */ 
+                }
+            }, void 0, false, {
+                fileName: "components/HandleProps.js",
+                lineNumber: 23,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Avatar, {
+                size: 80,
+                person: {
+                    name: "Akilu Lemma",
+                    imageId: "OKS67lh"
+                }
+            }, void 0, false, {
+                fileName: "components/HandleProps.js",
+                lineNumber: 31,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Avatar, {
+                size: 50,
+                person: {
+                    name: "Lin Lanying",
+                    imageId: "1bX5QH6"
+                }
+            }, void 0, false, {
+                fileName: "components/HandleProps.js",
+                lineNumber: 38,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "components/HandleProps.js",
+        lineNumber: 21,
+        columnNumber: 5
+    }, undefined);
+};
+_c1 = HandleProps;
+var _c, _c1;
+$RefreshReg$(_c, "Avatar");
+$RefreshReg$(_c1, "HandleProps");
+
+  $parcel$ReactRefreshHelpers$e025.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","./utils":"4lEfY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4lEfY":[function(require,module,exports) {
+//here person and size is props
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getImageUrl", ()=>getImageUrl);
+const getImageUrl = (person, size = "s")=>{
+    return "https://i.imgur.com/" + person.imageId + size + ".jpg";
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27503,103 +27613,109 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"coWOY":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$e025 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"7422ead32dcc1e6b":"786KC"}],"23vBE":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$cd19 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$e025.prelude(module);
+$parcel$ReactRefreshHelpers$cd19.prelude(module);
 
 try {
+//In jsx {cond && <App/> it means if cond then render <App/>} else nothing
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "HandleProps", ()=>HandleProps);
+parcelHelpers.export(exports, "PackingList", ()=>PackingList);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _utils = require("./utils");
-//props are used to pass data from parent component to child component , It is like we passing params in function in js just like that we can pass params in react component that is knows as props.
-//React component accepts a single arguement, a props object
-const Avatar = ({ person, size })=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-        className: "avatar",
-        src: (0, _utils.getImageUrl)(person),
-        alt: person.name,
-        width: size,
-        height: size
+const Item = ({ name, isPacked })=>{
+    // this is bad practise to write condition in if else format because code is harder to maintain we see here that if we want to change classname we have change it in two places.
+    /*
+   *** INSTEAD OF THIS WE USE TERNARY OPERATOR***
+   */ // if (isPacked) {
+    //   return <li className="item">{name}✅</li>;
+    // }
+    // return <li className="item">{name}</li>;
+    // return <li className="itema">{isPacked ? name + "☑" : name}</li>;
+    // return <li className="item">{isPacked ? <del>{name + "✅"}</del> : name}</li>;
+    //*** we use && operator when the condition is true  */
+    let itemContent = name;
+    // if (isPacked) {
+    //   itemContent = name + "✔";
+    // }
+    if (isPacked) itemContent = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("del", {
+        children: name + "\u2611"
     }, void 0, false, {
-        fileName: "components/HandleProps.js",
-        lineNumber: 9,
+        fileName: "components/ConditionalRender.js",
+        lineNumber: 25,
+        columnNumber: 19
+    }, undefined);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+        className: "item",
+        children: itemContent
+    }, void 0, false, {
+        fileName: "components/ConditionalRender.js",
+        lineNumber: 29,
         columnNumber: 5
     }, undefined);
 };
-_c = Avatar;
-const HandleProps = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+_c = Item;
+const PackingList = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "Handle Props"
+                children: "Conditional Rendering"
             }, void 0, false, {
-                fileName: "components/HandleProps.js",
-                lineNumber: 22,
+                fileName: "components/ConditionalRender.js",
+                lineNumber: 47,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Avatar, {
-                size: 100,
-                person: {
-                    name: "Shilpi Kumari",
-                    imageId: "YfeOqp2" /* Here We passing props to our children */ 
-                }
-            }, void 0, false, {
-                fileName: "components/HandleProps.js",
-                lineNumber: 23,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Avatar, {
-                size: 80,
-                person: {
-                    name: "Akilu Lemma",
-                    imageId: "OKS67lh"
-                }
-            }, void 0, false, {
-                fileName: "components/HandleProps.js",
-                lineNumber: 31,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Avatar, {
-                size: 50,
-                person: {
-                    name: "Lin Lanying",
-                    imageId: "1bX5QH6"
-                }
-            }, void 0, false, {
-                fileName: "components/HandleProps.js",
-                lineNumber: 38,
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Item, {
+                        isPacked: true,
+                        name: "space suit"
+                    }, void 0, false, {
+                        fileName: "components/ConditionalRender.js",
+                        lineNumber: 49,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Item, {
+                        isPacked: true,
+                        name: "Riding Gear"
+                    }, void 0, false, {
+                        fileName: "components/ConditionalRender.js",
+                        lineNumber: 50,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Item, {
+                        isPacked: false,
+                        name: "Helmet"
+                    }, void 0, false, {
+                        fileName: "components/ConditionalRender.js",
+                        lineNumber: 51,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "components/ConditionalRender.js",
+                lineNumber: 48,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "components/HandleProps.js",
-        lineNumber: 21,
+        fileName: "components/ConditionalRender.js",
+        lineNumber: 46,
         columnNumber: 5
     }, undefined);
 };
-_c1 = HandleProps;
+_c1 = PackingList;
 var _c, _c1;
-$RefreshReg$(_c, "Avatar");
-$RefreshReg$(_c1, "HandleProps");
+$RefreshReg$(_c, "Item");
+$RefreshReg$(_c1, "PackingList");
 
-  $parcel$ReactRefreshHelpers$e025.postlude(module);
+  $parcel$ReactRefreshHelpers$cd19.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./utils":"4lEfY"}],"4lEfY":[function(require,module,exports) {
-//here person and size is props
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "getImageUrl", ()=>getImageUrl);
-const getImageUrl = (person, size = "s")=>{
-    return "https://i.imgur.com/" + person.imageId + size + ".jpg";
-};
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["j2WyO","1xC6H","2Ew96"], "2Ew96", "parcelRequire9bc0")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["j2WyO","1xC6H","2Ew96"], "2Ew96", "parcelRequire9bc0")
 
 //# sourceMappingURL=index.7826abd7.js.map
