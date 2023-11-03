@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import State from "./components";
 
 // const ToolBar = ({ onPlayMovie, onUpload }) => {
 //   return (
@@ -17,26 +18,63 @@ import "./App.css";
 //   );
 // };
 
-const SignUp = () => {
-  return (
-    <form onSubmit={() => alert("submit")}>
-      <input type="text" />
-      <button>Send</button>
-    </form>
-  );
+//preventDefault:- some events have associated with default behaviour like in form we click on submit button it reload the window automatic to prevent this behaviour we use event.prevent default.
+
+// const SignUp = () => {
+//   return (
+//     <form
+//       onSubmit={(e) => {
+//         e.preventDefault();
+//         alert("submit");
+//       }}
+//     >
+//       <input type="text" />
+//       <button>Send</button>
+//     </form>
+//   );
+// };
+
+let stateValue;
+
+const useState = (initialValue) => {
+  if (stateValue === undefined) {
+    stateValue = initialValue;
+  }
+
+  const setValue = (newValue) => {
+    stateValue = newValue;
+  };
+
+  return [stateValue, setValue];
 };
 
 function App() {
+  /*
+   ***Here we understand how usestate work under the hood
+   */
+
+  const [countA, setCountA] = useState(1);
+
   return (
-    <>
+    <div>
       {/* <h1>Hello Learning Event Handling In react js</h1>
       <ToolBar
         onPlayMovie={() => alert("playing")}
         onUpload={() => alert("uploading")}
       /> */}
 
-      <SignUp />
-    </>
+      {/* <SignUp /> */}
+      {/* <State /> */}
+      <div>
+        <h1>Count A: {countA}</h1>
+        <button onClick={() => setCountA(countA - 1)}>Subtract</button>{" "}
+        <button onClick={() => setCountA(countA + 1)}>Add</button>
+      </div>
+      <div>
+        <h1>Count B: -1</h1>
+        <button>Subtract</button> <button>Add</button>
+      </div>
+    </div>
   );
 }
 
