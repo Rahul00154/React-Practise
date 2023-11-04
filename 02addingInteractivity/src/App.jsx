@@ -34,26 +34,26 @@ import State from "./components";
 //   );
 // };
 
-let stateValue;
+// let stateValue;
 
-const useState = (initialValue) => {
-  if (stateValue === undefined) {
-    stateValue = initialValue;
-  }
+// const useState = (initialValue) => {
+//   if (stateValue === undefined) {
+//     stateValue = initialValue;
+//   }
 
-  const setValue = (newValue) => {
-    stateValue = newValue;
-  };
+//   const setValue = (newValue) => {
+//     stateValue = newValue;
+//   };
 
-  return [stateValue, setValue];
-};
+//   return [stateValue, setValue];
+// };
 
 function App() {
   /*
    ***Here we understand how usestate work under the hood
    */
 
-  const [countA, setCountA] = useState(1);
+  // const [countA, setCountA] = useState(1);
 
   return (
     <div>
@@ -65,7 +65,7 @@ function App() {
 
       {/* <SignUp /> */}
       {/* <State /> */}
-      <div>
+      {/* <div>
         <h1>Count A: {countA}</h1>
         <button onClick={() => setCountA(countA - 1)}>Subtract</button>{" "}
         <button onClick={() => setCountA(countA + 1)}>Add</button>
@@ -73,7 +73,8 @@ function App() {
       <div>
         <h1>Count B: -1</h1>
         <button>Subtract</button> <button>Add</button>
-      </div>
+      </div> */}
+      <h1>Learningn From React Dev</h1>
     </div>
   );
 }
